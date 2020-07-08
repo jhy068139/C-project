@@ -1,0 +1,10 @@
+C:\Users\s1905\source\repos\ClothProjext\ClothProjext\bin\Debug\ClothProjext.exe.config
+C:\Users\s1905\source\repos\ClothProjext\ClothProjext\bin\Debug\ClothProjext.exe
+C:\Users\s1905\source\repos\ClothProjext\ClothProjext\bin\Debug\ClothProjext.pdb
+C:\Users\s1905\source\repos\ClothProjext\ClothProjext\obj\Debug\ClothProjext.csprojAssemblyReference.cache
+C:\Users\s1905\source\repos\ClothProjext\ClothProjext\obj\Debug\ClothProjext.Form.resources
+C:\Users\s1905\source\repos\ClothProjext\ClothProjext\obj\Debug\ClothProjext.Properties.Resources.resources
+C:\Users\s1905\source\repos\ClothProjext\ClothProjext\obj\Debug\ClothProjext.csproj.GenerateResource.cache
+C:\Users\s1905\source\repos\ClothProjext\ClothProjext\obj\Debug\ClothProjext.csproj.CoreCompileInputs.cache
+C:\Users\s1905\source\repos\ClothProjext\ClothProjext\obj\Debug\ClothProjext.exe
+C:\Users\s1905\source\repos\ClothProjext\ClothProjext\obj\Debug\ClothProjext.pdb
