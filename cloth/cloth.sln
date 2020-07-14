@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cloth", "cloth\cloth.csproj", "{2608C56A-FB27-4926-8C8E-57EE6BDA999E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2608C56A-FB27-4926-8C8E-57EE6BDA999E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2608C56A-FB27-4926-8C8E-57EE6BDA999E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2608C56A-FB27-4926-8C8E-57EE6BDA999E}.Debug|x64.ActiveCfg = Debug|x64
+		{2608C56A-FB27-4926-8C8E-57EE6BDA999E}.Debug|x64.Build.0 = Debug|x64
+		{2608C56A-FB27-4926-8C8E-57EE6BDA999E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2608C56A-FB27-4926-8C8E-57EE6BDA999E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2608C56A-FB27-4926-8C8E-57EE6BDA999E}.Release|x64.ActiveCfg = Release|x64
+		{2608C56A-FB27-4926-8C8E-57EE6BDA999E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3A3A8DAC-ABCC-4BA5-80AB-9F2609845FD7}
+	EndGlobalSection
+EndGlobal
