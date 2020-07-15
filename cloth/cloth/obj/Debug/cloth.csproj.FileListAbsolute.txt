@@ -13,3 +13,5 @@ C:\Users\s1905\source\repos\cloth\cloth\obj\Debug\cloth.Bottom.resources
 C:\Users\s1905\source\repos\cloth\cloth\obj\Debug\cloth.Shoes.resources
 C:\Users\s1905\source\repos\cloth\cloth\obj\Debug\cloth.HAT.resources
 C:\Users\s1905\source\repos\cloth\cloth\obj\Debug\cloth.exe.config
+C:\Users\s1905\source\repos\cloth\cloth\obj\Debug\cloth.ADD.resources
+C:\Users\s1905\source\repos\cloth\cloth\obj\Debug\cloth.Delete.resources

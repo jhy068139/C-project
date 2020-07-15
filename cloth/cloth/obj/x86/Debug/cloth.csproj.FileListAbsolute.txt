@@ -13,3 +13,5 @@ C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Debug\cloth.csproj.CoreCompileIn
 C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Debug\cloth.exe
 C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Debug\cloth.pdb
 C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Debug\cloth.exe.config
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Debug\cloth.ADD.resources
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Debug\cloth.Delete.resources

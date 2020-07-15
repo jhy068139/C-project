@@ -202,5 +202,14 @@ namespace cloth
                     break;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            ADD add = new ADD();
+
+            add.Show();
+        }
     }
 }

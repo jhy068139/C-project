@@ -160,6 +160,29 @@ namespace cloth
                     break;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            ADD add = new ADD();
+
+            add.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Delete add = new Delete();
+
+            add.Show();
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
