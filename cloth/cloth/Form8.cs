@@ -11,17 +11,17 @@ using System.Windows.Forms;
 
 namespace cloth
 {
-    public partial class HOME : Form
+    public partial class COORDI : Form
     {
         private SqlConnection sqlConn = null;
         private string constr = "SERVER =127.0.0.1,1433; DATABASE =LookBook;" + "UID =hayeon; PASSWORD =1234";
 
-        public HOME()
+        public COORDI()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void label8_Click(object sender, EventArgs e)
         {
 
         }
@@ -34,8 +34,6 @@ namespace cloth
             Form2 colortop = new Form2();
 
             colortop.Show();
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -65,130 +63,26 @@ namespace cloth
             hat.Show();
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
-            DataSet ds = new DataSet();
+            this.Hide();
 
+            ADD add = new ADD();
 
-            switch (comboBox1.SelectedItem.ToString().Split(new string[] { ": " }, StringSplitOptions.None).Last())
-            {
-                case "":
-
-                    // using 을 사용하면 알아서 닫아줌
-                    using (SqlConnection conn = new SqlConnection(constr))
-                    {
-                        conn.Open();
-                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT * FROM Color";
-                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
-                    } // conn.Close(); 를 자동으로 해준다
-                    break;
-                case "비건디":
-                    //Handle for the first combobox
-                    using (SqlConnection conn = new SqlConnection(constr))
-                    {
-                        conn.Open();
-                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT bottom_color FROM Color WHERE top_color = '버건디';";
-                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
-                    } // conn.Close(); 를 자동으로 해준다
-
-                    break;
-                case "핑크":
-                    using (SqlConnection conn = new SqlConnection(constr))
-                    {
-                        conn.Open();
-                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT bottom_color FROM Color WHERE top_color = '핑크';";
-                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
-                    } // conn.Close(); 를 자동으로 해준다
-                    //Handle for the second combobox
-                    break;
-                case "노랑":
-                    using (SqlConnection conn = new SqlConnection(constr))
-                    {
-                        conn.Open();
-                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT bottom_color FROM Color WHERE top_color = '노랑';";
-                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
-                    } // conn.Close(); 를 자동으로 해준다
-                    //Handle for the third combobox
-                    break;
-                case "파랑":
-                    using (SqlConnection conn = new SqlConnection(constr))
-                    {
-                        conn.Open();
-                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT bottom_color FROM Color WHERE top_color = '파랑';";
-                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
-                    } // conn.Close(); 를 자동으로 해준다
-                    //Handle for the third combobox
-                    break;
-                case "네이비":
-                    using (SqlConnection conn = new SqlConnection(constr))
-                    {
-                        conn.Open();
-                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT bottom_color FROM Color WHERE top_color = '네이비';";
-                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
-                    } // conn.Close(); 를 자동으로 해준다
-                    //Handle for the third combobox
-                    break;
-                case "화이트":
-                    using (SqlConnection conn = new SqlConnection(constr))
-                    {
-                        conn.Open();
-                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT bottom_color FROM Color WHERE top_color = '화이트';";
-                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
-                    } // conn.Close(); 를 자동으로 해준다
-                    //Handle for the third combobox
-                    break;
-                case "블랙":
-                    using (SqlConnection conn = new SqlConnection(constr))
-                    {
-                        conn.Open();
-                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT bottom_color FROM Color WHERE top_color = '블랙';";
-                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
-                    } // conn.Close(); 를 자동으로 해준다
-                    //Handle for the third combobox
-                    break;
-                case "그레이":
-                    using (SqlConnection conn = new SqlConnection(constr))
-                    {
-                        conn.Open();
-                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT bottom_color FROM Color WHERE top_color = '그레이';";
-                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
-                    } // conn.Close(); 를 자동으로 해준다
-                    //Handle for the third combobox
-                    break;
-                case "그린":
-                    using (SqlConnection conn = new SqlConnection(constr))
-                    {
-                        conn.Open();
-                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT bottom_color FROM Color WHERE top_color = '그린';";
-                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
-                    } // conn.Close(); 를 자동으로 해준다
-                    //Handle for the third combobox
-                    break;
-            }
-            dataGridView1.DataSource = ds.Tables[0];
+            add.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Delete add = new Delete();
+
+            add.Show();
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
         {
             DataSet ds = new DataSet();
 
@@ -207,108 +101,193 @@ namespace cloth
                         adapter.Fill(ds, "Color");
                     } // conn.Close(); 를 자동으로 해준다
                     break;
-                case "진청":
+                case "긴바지":
                     //Handle for the first combobox
                     using (SqlConnection conn = new SqlConnection(constr))
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT top_color FROM Color WHERE bottom_color = '진청';";
+                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='긴바지'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
+                        adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
 
                     break;
-                case "블랙":
+                case "반바지":
                     using (SqlConnection conn = new SqlConnection(constr))
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT top_color FROM Color WHERE bottom_color = '블랙';";
+                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='반바지'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
+                        adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
                     //Handle for the second combobox
                     break;
-                case "연청":
+                case "멜빵바지":
                     using (SqlConnection conn = new SqlConnection(constr))
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT top_color FROM Color WHERE bottom_color = '연청';";
+                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='멜빵바지'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
+                        adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
                     //Handle for the third combobox
                     break;
-                case "화이트":
+                case "치마":
                     using (SqlConnection conn = new SqlConnection(constr))
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT top_color FROM Color WHERE bottom_color = '화이트';";
+                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='치마'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
+                        adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
                     //Handle for the third combobox
                     break;
-                case "베이지":
+                case "트레이닝 팬츠":
                     using (SqlConnection conn = new SqlConnection(constr))
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT top_color FROM Color WHERE bottom_color = '베이지';";
+                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='트레이닝 팬츠'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
+                        adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
                     //Handle for the third combobox
                     break;
-                case "그레이":
+                case "롱 치마":
                     using (SqlConnection conn = new SqlConnection(constr))
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT top_color FROM Color WHERE bottom_color = '그레이';";
+                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='롱 치마'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-                        adapter.Fill(ds, "Color");
+                        adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
                     //Handle for the third combobox
                     break;
-             
+                case "슬랙스":
+                    using (SqlConnection conn = new SqlConnection(constr))
+                    {
+                        conn.Open();
+                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
+                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='슬랙스'";
+                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+                        adapter.Fill(ds, "Color,Combi");
+                    } // conn.Close(); 를 자동으로 해준다
+                    //Handle for the third combobox
+                    break;
+                case "뷔스티에 원피스":
+                    using (SqlConnection conn = new SqlConnection(constr))
+                    {
+                        conn.Open();
+                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
+                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='뷔스티에 원피스'";
+                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+                        adapter.Fill(ds, "Color,Combi");
+                    } // conn.Close(); 를 자동으로 해준다
+                    //Handle for the third combobox
+                    break;
+            
             }
-            dataGridView1.DataSource = ds.Tables[0];
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            ADD add = new ADD();
-
-            add.Show();
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-
-            Delete add = new Delete();
-
-            add.Show();
+            dataGridView1.DataSource = ds.Tables[0]; 
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            DataSet ds = new DataSet();
 
-            COORDI coordl = new COORDI();
 
-            coordl.Show();
-        }
+            switch (comboBox1.SelectedItem.ToString().Split(new string[] { ": " }, StringSplitOptions.None).Last())
+            {
+                case "":
 
-        private void label7_Click(object sender, EventArgs e)
-        {
+                    // using 을 사용하면 알아서 닫아줌
+                    using (SqlConnection conn = new SqlConnection(constr))
+                    {
+                        conn.Open();
+                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
+                        string sql = "SELECT * FROM Color";
+                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+                        adapter.Fill(ds, "Color");
+                    } // conn.Close(); 를 자동으로 해준다
+                    break;
+                case "반팔":
+                    //Handle for the first combobox
+                    using (SqlConnection conn = new SqlConnection(constr))
+                    {
+                        conn.Open();
+                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
+                        string sql = "SELECT Combi.tc,Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='반팔'";
+                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+                        adapter.Fill(ds, "Color,Combi");
+                    } // conn.Close(); 를 자동으로 해준다
 
+                    break;
+                case "후드집업":
+                    using (SqlConnection conn = new SqlConnection(constr))
+                    {
+                        conn.Open();
+                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
+                        string sql = "SELECT Combi.tc,Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='후드집업'";
+                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+                        adapter.Fill(ds, "Color,Combi");
+                    } // conn.Close(); 를 자동으로 해준다
+                    //Handle for the second combobox
+                    break;
+                case "맨투맨":
+                    using (SqlConnection conn = new SqlConnection(constr))
+                    {
+                        conn.Open();
+                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
+                        string sql = "SELECT Combi.tc,Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='맨투맨'";
+                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+                        adapter.Fill(ds, "Color,Combi");
+
+                    } // conn.Close(); 를 자동으로 해준다
+                    //Handle for the third combobox
+                    break;
+                case "블라우스":
+                    using (SqlConnection conn = new SqlConnection(constr))
+                    {
+                        conn.Open();
+                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
+                        string sql = "SELECT Combi.tc,Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='블라우스'";
+                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+                        adapter.Fill(ds, "Color,Combi");
+
+                    } // conn.Close(); 를 자동으로 해준다
+                    //Handle for the third combobox
+                    break;
+                case "셔츠":
+                    using (SqlConnection conn = new SqlConnection(constr))
+                    {
+                        conn.Open();
+                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
+                        string sql = "SELECT Combi.tc,Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='셔츠'";
+                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+                        adapter.Fill(ds, "Color,Combi");
+
+                    } // conn.Close(); 를 자동으로 해준다
+                    //Handle for the third combobox
+                    break;
+                case "니트":
+                    using (SqlConnection conn = new SqlConnection(constr))
+                    {
+                        conn.Open();
+                        //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
+                        string sql = "SELECT Combi.tc,Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='니트'";
+                        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+                        adapter.Fill(ds, "Color,Combi");
+
+                    } // conn.Close(); 를 자동으로 해준다
+                    //Handle for the third combobox
+                    break;
+            
+            }
+            dataGridView1.DataSource = ds.Tables[0];
         }
 
         private void btn_home_Click(object sender, EventArgs e)
@@ -318,6 +297,33 @@ namespace cloth
             HOME home = new HOME();
 
             home.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            COORDI coordl = new COORDI();
+
+            coordl.Show();
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            Delete coordl = new Delete();
+
+            coordl.Show();
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            ADD coordl = new ADD();
+
+            coordl.Show();
         }
     }
 }

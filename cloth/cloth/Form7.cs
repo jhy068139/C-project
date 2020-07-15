@@ -150,5 +150,23 @@ namespace cloth
             add.Show();
 
         }
+
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            HOME home = new HOME();
+
+            home.Show();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            COORDI coordl = new COORDI();
+
+            coordl.Show();
+        }
     }
 }

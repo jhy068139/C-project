@@ -211,5 +211,28 @@ namespace cloth
 
             add.Show();
         }
+
+        private void btn_home_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            HOME home = new HOME();
+
+            home.Show();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            COORDI coordl = new COORDI();
+
+            coordl.Show();
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

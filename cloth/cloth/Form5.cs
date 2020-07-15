@@ -145,5 +145,14 @@ namespace cloth
         {
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            COORDI coordl = new COORDI();
+
+            coordl.Show();
+        }
     }
 }
