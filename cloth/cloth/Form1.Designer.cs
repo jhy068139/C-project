@@ -256,6 +256,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "HOME";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "home";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel6.ResumeLayout(false);

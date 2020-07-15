@@ -12,3 +12,4 @@ C:\Users\s1905\source\repos\cloth\cloth\obj\Debug\cloth.Form2.resources
 C:\Users\s1905\source\repos\cloth\cloth\obj\Debug\cloth.Bottom.resources
 C:\Users\s1905\source\repos\cloth\cloth\obj\Debug\cloth.Shoes.resources
 C:\Users\s1905\source\repos\cloth\cloth\obj\Debug\cloth.HAT.resources
+C:\Users\s1905\source\repos\cloth\cloth\obj\Debug\cloth.exe.config

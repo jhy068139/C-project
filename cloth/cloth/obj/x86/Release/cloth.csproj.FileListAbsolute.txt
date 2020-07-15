@@ -1,0 +1,15 @@
+C:\Users\s1905\source\repos\cloth\cloth\bin\x86\Release\cloth.exe.config
+C:\Users\s1905\source\repos\cloth\cloth\bin\x86\Release\cloth.exe
+C:\Users\s1905\source\repos\cloth\cloth\bin\x86\Release\cloth.pdb
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Release\cloth.csprojAssemblyReference.cache
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Release\cloth.HOME.resources
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Release\cloth.Form2.resources
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Release\cloth.Bottom.resources
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Release\cloth.Shoes.resources
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Release\cloth.HAT.resources
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Release\cloth.Properties.Resources.resources
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Release\cloth.csproj.GenerateResource.cache
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Release\cloth.csproj.CoreCompileInputs.cache
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Release\cloth.exe
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Release\cloth.pdb
+C:\Users\s1905\source\repos\cloth\cloth\obj\x86\Release\cloth.exe.config
