@@ -330,11 +330,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(679, 51);
+            this.dataGridView1.Location = new System.Drawing.Point(672, 51);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(574, 538);
+            this.dataGridView1.Size = new System.Drawing.Size(424, 538);
             this.dataGridView1.TabIndex = 33;
             // 
             // button9
@@ -411,6 +411,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(357, 28);
             this.comboBox2.TabIndex = 37;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox1
             // 
@@ -450,7 +451,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1253, 51);
+            this.panel1.Size = new System.Drawing.Size(1096, 51);
             this.panel1.TabIndex = 31;
             // 
             // panel5
@@ -534,6 +535,7 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(357, 28);
             this.comboBox3.TabIndex = 37;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // comboBox4
             // 
@@ -579,7 +581,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(1253, 592);
+            this.ClientSize = new System.Drawing.Size(1096, 592);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.dataGridView1);

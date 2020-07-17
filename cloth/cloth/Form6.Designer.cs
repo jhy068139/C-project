@@ -52,6 +52,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.button11 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
@@ -67,8 +69,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button10 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.label13 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -366,6 +366,38 @@
             this.panel8.Size = new System.Drawing.Size(210, 402);
             this.panel8.TabIndex = 6;
             // 
+            // button11
+            // 
+            this.button11.AutoSize = true;
+            this.button11.BackColor = System.Drawing.SystemColors.Menu;
+            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button11.FlatAppearance.BorderSize = 0;
+            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("에스코어 드림 4 Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.button11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button11.Location = new System.Drawing.Point(0, 203);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(210, 38);
+            this.button11.TabIndex = 15;
+            this.button11.Text = "MATCH COLOR";
+            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.label13.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label13.Font = new System.Drawing.Font("LG Smart UI Regular", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label13.Location = new System.Drawing.Point(0, 186);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(76, 17);
+            this.label13.TabIndex = 14;
+            this.label13.Text = "coordinate";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
             // button7
             // 
             this.button7.AutoSize = true;
@@ -552,38 +584,6 @@
             this.button8.Text = "색깔 조합 조회하기";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button11
-            // 
-            this.button11.AutoSize = true;
-            this.button11.BackColor = System.Drawing.SystemColors.Menu;
-            this.button11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("에스코어 드림 4 Regular", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.button11.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button11.Location = new System.Drawing.Point(0, 203);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(210, 38);
-            this.button11.TabIndex = 15;
-            this.button11.Text = "MATCH COLOR";
-            this.button11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.label13.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label13.Font = new System.Drawing.Font("LG Smart UI Regular", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label13.Location = new System.Drawing.Point(0, 186);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(76, 17);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "coordinate";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
             // 
             // ADD
             // 

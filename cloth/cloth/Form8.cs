@@ -107,7 +107,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='긴바지'";
+                        string sql = "SELECT Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='긴바지'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
@@ -118,7 +118,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='반바지'";
+                        string sql = "SELECT Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='반바지'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
@@ -129,7 +129,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='멜빵바지'";
+                        string sql = "SELECT Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='멜빵바지'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
@@ -140,7 +140,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='치마'";
+                        string sql = "SELECT Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='치마'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
@@ -151,7 +151,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='트레이닝 팬츠'";
+                        string sql = "SELECT Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='트레이닝 팬츠'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
@@ -162,7 +162,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='롱 치마'";
+                        string sql = "SELECT Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='롱 치마'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
@@ -173,7 +173,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='슬랙스'";
+                        string sql = "SELECT Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='슬랙스'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
@@ -184,7 +184,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='뷔스티에 원피스'";
+                        string sql = "SELECT Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='뷔스티에 원피스'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
@@ -220,7 +220,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color,Combi.tc From Color CROSS JOIN Combi WHERE bottom='반팔'";
+                        string sql = "SELECT Combi.bottom,Color.bottom_color,Color.top_color From Color CROSS JOIN Combi WHERE bottom='반팔'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
@@ -231,7 +231,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.tc,Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='후드집업'";
+                        string sql = "SELECT Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='후드집업'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
                     } // conn.Close(); 를 자동으로 해준다
@@ -242,7 +242,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.tc,Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='맨투맨'";
+                        string sql = "SELECT Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='맨투맨'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
 
@@ -254,7 +254,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.tc,Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='블라우스'";
+                        string sql = "SELECT Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='블라우스'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
 
@@ -266,7 +266,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.tc,Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='셔츠'";
+                        string sql = "SELECT Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='셔츠'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
 
@@ -278,7 +278,7 @@ namespace cloth
                     {
                         conn.Open();
                         //연결이 안되어 있어도 자동적으로 연결하고 연결을 끊는다.
-                        string sql = "SELECT Combi.tc,Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='니트'";
+                        string sql = "SELECT Color.top_color, Combi.bottom,Color.bottom_color From Color CROSS JOIN Combi WHERE tc='니트'";
                         SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
                         adapter.Fill(ds, "Color,Combi");
 
@@ -539,6 +539,16 @@ namespace cloth
 
             }
             dataGridView1.DataSource = ds.Tables[0];
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
